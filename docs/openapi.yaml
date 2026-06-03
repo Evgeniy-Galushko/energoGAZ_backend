@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: server_for_EnergoGAZ
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  description: Supporting documentation for working with the server part of the EnergoGAZ company's accounting system.
+tags:
+  - name: User
+    description: User registration
+  - name: Operational Work
+    description: Accounting of the activities of the EnergoGAZ company
+servers:
+  - url: http://localhost:3000
+paths:
+  /api/auth/registeUser:
+    post:
+      $ref: ../docs/swagger/paths/auth/postRegister.yaml
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
