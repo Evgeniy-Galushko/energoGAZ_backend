@@ -12,6 +12,16 @@ const userSchema = new Schema(
     placeOfWork: {
       type: String,
       required: true,
+      enum: [
+        'офис',
+        'agzp_1',
+        'agzp_2',
+        'agzp_3',
+        'agzp_4',
+        'agzp_5',
+        'agzp_6',
+        'agzp_7',
+      ],
     },
     userId: { type: Schema.Types.ObjectId, ref: 'users' },
   },

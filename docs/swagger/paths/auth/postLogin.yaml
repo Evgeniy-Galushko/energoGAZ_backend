@@ -1,17 +1,16 @@
 tags:
   - User
-summary: User registration
-operationId: createUser
-description: User registration
+summary: User Login
+operationId: addUser
+description: User Login
 security: []
 requestBody:
   content:
-    application/json:
+    application-json:
       schema:
         type: object
         required:
           - name
-          - jobTitle
           - password
           - placeOfWork
         properties:
@@ -19,11 +18,6 @@ requestBody:
             description: 'user name'
             type: string
             example: 'John'
-          jobTitle:
-            description: 'user job title'
-            type: string
-            example: 'оператор'
-            enum: ['оператор', 'директор', 'бухгалтер', 'менеджер']
           password:
             description: 'user password'
             type: string
@@ -32,43 +26,37 @@ requestBody:
             description: 'user place of work'
             type: string
             example: 'agzp_1'
-            enum:
-              [
-                'офис',
-                'agzp_1',
-                'agzp_2',
-                'agzp_3',
-                'agzp_4',
-                'agzp_5',
-                'agzp_6',
-                'agzp_7',
-              ]
 responses:
-  '201':
-    description: Creates a new user
+  '200':
+    description: 'The user is authorized'
     content:
       application/json:
         schema:
           type: object
           required:
-            - stutus
+            - status
             - message
             - data
           properties:
-            stutus:
+            status:
               type: integer
-              example: 201
-            message:
+              example: 200
+            message::
               type: string
-              example: 'New user added!'
+              example: 'Successfully logged in an user!'
             data:
               type: object
               required:
+                - userId
                 - name
                 - jobTitle
                 - placeOfWork
-                - _id
+                - accessToken
               properties:
+                userId:
+                  description: 'user Id'
+                  type: string
+                  example: '6a22c356b0a3c31e140331a0'
                 name:
                   description: 'user name'
                   type: string
@@ -76,23 +64,19 @@ responses:
                 jobTitle:
                   description: 'job title user'
                   type: string
-                  example: 'директор'
+                  example: 'оператор'
                 placeOfWork:
                   description: 'place of work user'
                   type: string
-                  example: 'офис'
-                _id:
-                  description: 'session id'
+                  example: agzp_1
+                accessToken:
+                  description: 'token'
                   type: string
-                  example: '6a394929e032bfde7e32e336'
-  '401':
-    $ref: ../../components/responses/401.yaml
-  '403':
-    $ref: ../../components/responses/403.yaml
-  '409':
-    description: ConflictError
+                  example: '+QrbOSsmN5Mu7RGtMS5nJAuuWNhI0SJyccHIdvT0'
+  '404':
+    description: 'NotFoundError'
     content:
-      application/json:
+      aplication/json:
         schema:
           required:
             - status
@@ -101,10 +85,10 @@ responses:
           properties:
             status:
               type: integer
-              example: 409
+              example: 404
             message:
               type: string
-              example: ConflictError
+              example: 'User not found'
             data:
               type: object
               required:
@@ -112,4 +96,4 @@ responses:
               properties:
                 message:
                   type: string
-                  example: 'That name is taken'
+                  example: 'User not found'

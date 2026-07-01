@@ -1,8 +1,8 @@
 import path from 'node:path';
 
-export const THIRTY_MINUTES = 30 * 60 * 1000;
+export const EIGHT_HOURS = 8 * 60 * 60 * 1000;
 
-export const TWELVE_HOURS = 12 * 60 * 60 * 1000;
+export const TWENTY_FOUR_HOURS = 24 * 60 * 60 * 1000;
 
 export const SWAGGER_PATH = path.join(process.cwd(), 'docs', 'swagger.json');
 

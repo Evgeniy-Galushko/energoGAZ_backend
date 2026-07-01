@@ -1,0 +1,45 @@
+tags:
+  - Operational Work
+summary: Delete gas station by ID
+operationId: deleteAgzpId
+description: Delete gas station by ID
+security:
+  - bearerAuth: []
+parameters:
+  - in: path
+    name: agzpId
+    required: true
+    schema:
+      type: string
+      example: 6a3bda1ad130661459b25c6c
+responses:
+  '204':
+    description: 'The gas station has been removed.'
+  '401':
+    $ref: ../../../components/responses/401.yaml
+  '403':
+    $ref: ../../../components/responses/403.yaml
+  '404':
+    description: NotFoundError
+    content:
+      application/json:
+        schema:
+          required:
+            - status
+            - message
+            - data
+          properties:
+            status:
+              type: integer
+              example: 404
+            message:
+              type: string
+              example: NotFoundError
+            data:
+              type: object
+              required:
+                - message
+              properties:
+                message:
+                  type: string
+                  example: 'No such AGZP found'

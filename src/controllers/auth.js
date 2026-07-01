@@ -1,5 +1,15 @@
 import { loginUser, logoutUser, registerUser } from '../services/auth.js';
 
+export const registerUserController = async (req, res) => {
+  const newUser = await registerUser(req.body);
+
+  res.json({
+    status: 201,
+    message: 'New user added!',
+    data: newUser,
+  });
+};
+
 export const loginUserController = async (req, res) => {
   const user = await loginUser(req.body);
 
@@ -15,16 +25,6 @@ export const loginUserController = async (req, res) => {
       accessTokenValideUntil: user.accessTokenValideUntil,
       refreshTokenValidUntile: user.refreshTokenValidUntile,
     },
-  });
-};
-
-export const registerUserController = async (req, res) => {
-  const newUser = await registerUser(req.body);
-
-  res.json({
-    status: 201,
-    message: 'New user added!',
-    data: newUser,
   });
 };
 

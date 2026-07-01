@@ -15,7 +15,7 @@ export const accessCheck = async (req, res, next) => {
   // console.log(jobTitle);
 
   if (jobTitle === 'оператор' && COMPANY_POSITIONS.includes(session.jobTitle)) {
-    next(createHttpError(401, 'Access denied'));
+    next(createHttpError(403, 'Access denied'));
   }
 
   next();

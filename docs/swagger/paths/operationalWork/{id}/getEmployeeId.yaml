@@ -1,0 +1,85 @@
+tags:
+  - Operational Work
+summary: Information by employeeId
+operationId: getEmployeesId
+description: Information by employeeId
+security:
+  - bearerAuth: []
+parameters:
+  - in: path
+    name: employeeId
+    required: true
+    schema:
+      type: string
+      example: 6a1ea6adf73050b494da3ccd
+responses:
+  '200':
+    description: 'Get employees by id'
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - status
+            - message
+            - data
+          properties:
+            status:
+              type: integer
+              example: 200
+            message:
+              type: string
+              example: 'Data about one employee'
+            data:
+              type: object
+              required:
+                - _id
+                - name
+                - jobTitle
+                - placeOfWork
+              properties:
+                _id:
+                  description: 'employeess id'
+                  type: string
+                  example: '6a22c356b0a3c31e140331a0'
+                name:
+                  description: 'employeess name'
+                  type: string
+                  example: 'Колобков'
+                jobTitle:
+                  description: 'job title'
+                  type: string
+                  example: 'менеджер'
+                placeOfWork:
+                  description: 'place of work'
+                  type: string
+                  example: 'офис'
+  '401':
+    $ref: ../../../components/responses/401.yaml
+  '403':
+    $ref: ../../../components/responses/403.yaml
+  '404':
+    description: NotFoundError
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - status
+            - message
+            - data
+          properties:
+            status:
+              type: integer
+              example: 404
+            message:
+              type: string
+              example: NotFoundError
+            data:
+              type: object
+              required:
+                - message
+              properties:
+                message:
+                  type: string
+                  example: 'Employees not found'

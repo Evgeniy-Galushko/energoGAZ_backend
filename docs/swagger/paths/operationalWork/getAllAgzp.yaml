@@ -1,0 +1,99 @@
+tags:
+  - Operational Work
+summary: List of all gas stations
+operationId: allAgzp
+description: List of all gas stations
+security:
+  - bearerAuth: []
+responses:
+  '200':
+    description: 'All AGZP'
+    content:
+      aplication-json:
+        schema:
+          type: object
+          required:
+            - status
+            - message
+            - data
+          properties:
+            status:
+              type: integer
+              example: 200
+            message:
+              type: string
+              example: 'All AGZP'
+            data:
+              type: array
+              items:
+                type: object
+                required:
+                  - gasStationNumber
+                  - typeOfFuel
+                  - address
+                  - phoneNumber
+                  - listOfEmployees
+                  - fuelTanks
+                  - dispenserName
+                  - commissioningDate
+                  - lastMaintenance
+                  - _id
+                  - userId
+                  - userName
+                properties:
+                  gasStationNumber:
+                    description: 'gas station number'
+                    type: string
+                    example: 'agzp_22'
+                  typeOfFuel:
+                    description: 'type of fuel'
+                    type: array
+                    example: [{ 'view': 'gaz' }]
+                  address:
+                    description: 'address agzp'
+                    type: string
+                    example: 'Черкаська обл. м. Хлебное, вул. Ватутена, 28'
+                  phoneNumber:
+                    description: 'phone number'
+                    type: string
+                    example: '123-123-45-67'
+                  listOfEmployees:
+                    description: 'list of employees'
+                    type: array
+                    example: ['Козлов', 'Петров', 'Сидоров']
+                  fuelTanks:
+                    description: 'fuel tanks'
+                    type: array
+                    example:
+                      [
+                        { 'containerNumber': 1, 'volume': 9960 },
+                        { 'containerNumber': 2, 'volume': 10050 },
+                      ]
+                  dispenserName:
+                    description: 'dispenser name'
+                    type: string
+                    example: 'shelf'
+                  commissioningDate:
+                    description: 'commissioning date'
+                    type: string
+                    example: '01.01.2014'
+                  lastMaintenance:
+                    description: 'last maintenance'
+                    type: string
+                    example: '12.02.2022'
+                  _id:
+                    description: 'employeess id'
+                    type: string
+                    example: '6a3bda1ad130661459b25c6c'
+                  userId:
+                    description: 'Company employee ID'
+                    type: string
+                    example: '6a22c356b0a3c31e140331a0'
+                  userName:
+                    description: 'Name of the company employee'
+                    type: string
+                    example: 'Иванов'
+  '401':
+    $ref: ../../components/responses/401.yaml
+  '403':
+    $ref: ../../components/responses/403.yaml

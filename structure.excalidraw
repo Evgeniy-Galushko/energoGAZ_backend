@@ -25,8 +25,8 @@
         "type": 3
       },
       "seed": 346025814,
-      "version": 482,
-      "versionNonce": 567994076,
+      "version": 483,
+      "versionNonce": 618823215,
       "isDeleted": false,
       "boundElements": [
         {
@@ -36,9 +36,13 @@
         {
           "id": "35BQgZzmRfX6jx-4C0QCx",
           "type": "arrow"
+        },
+        {
+          "id": "CzxQMDO_9Bi7viJSvYetP",
+          "type": "arrow"
         }
       ],
-      "updated": 1780399465517,
+      "updated": 1780908763523,
       "link": null,
       "locked": false
     },
@@ -181,8 +185,8 @@
         "type": 3
       },
       "seed": 346903254,
-      "version": 617,
-      "versionNonce": 1039783132,
+      "version": 618,
+      "versionNonce": 1509121039,
       "isDeleted": false,
       "boundElements": [
         {
@@ -196,9 +200,13 @@
         {
           "id": "dHyasfP8avSnXyq4Uh9Fm",
           "type": "arrow"
+        },
+        {
+          "id": "fw92JA7Z1HVI2hMGtgoEB",
+          "type": "arrow"
         }
       ],
-      "updated": 1780399485141,
+      "updated": 1780908770421,
       "link": null,
       "locked": false
     },
@@ -242,8 +250,8 @@
     {
       "id": "3rkyLAeQv1vVgDGBcN_9g",
       "type": "rectangle",
-      "x": 350.20007854037806,
-      "y": -550.9333597819012,
+      "x": 587.3470853478194,
+      "y": -504.7434398451379,
       "width": 232.40008163452146,
       "height": 185,
       "angle": 6.266764727248347,
@@ -261,8 +269,8 @@
         "type": 3
       },
       "seed": 669671830,
-      "version": 544,
-      "versionNonce": 807595364,
+      "version": 832,
+      "versionNonce": 1103758357,
       "isDeleted": false,
       "boundElements": [
         {
@@ -282,24 +290,20 @@
           "type": "arrow"
         },
         {
-          "id": "AxQ2rmBVcKZkBKjMmnkCr",
-          "type": "arrow"
-        },
-        {
           "id": "g_EMZci3tcuSjzJ80IpBg",
           "type": "arrow"
         }
       ],
-      "updated": 1780399631714,
+      "updated": 1781357911226,
       "link": null,
       "locked": false
     },
     {
       "id": "UeHatDCbUNLIxxO6Seq6Y",
       "type": "text",
-      "x": 355.20007854037806,
-      "y": -545.9333597819012,
-      "width": 186.6598663330078,
+      "x": 592.3470853478194,
+      "y": -499.7434398451379,
+      "width": 210.87985229492188,
       "height": 175,
       "angle": 6.266764727248347,
       "strokeColor": "#1e1e1e",
@@ -314,30 +318,30 @@
       "index": "aE",
       "roundness": null,
       "seed": 1050001110,
-      "version": 492,
-      "versionNonce": 397810268,
+      "version": 796,
+      "versionNonce": 1719318901,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1780399632738,
+      "updated": 1781357911226,
       "link": null,
       "locked": false,
-      "text": "Схема:\nname: имя\npassword: пароль\njobTitle:должность\nplaceOfWork: место\nработы\n",
+      "text": "Схема:\n - name: имя\n - password: пароль\n - jobTitle:должность\n - placeOfWork: место\nработы\n",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": "3rkyLAeQv1vVgDGBcN_9g",
-      "originalText": "Схема:\nname: имя\npassword: пароль\njobTitle:должность\nplaceOfWork: место работы\n",
+      "originalText": "Схема:\n - name: имя\n - password: пароль\n - jobTitle:должность\n - placeOfWork: место работы\n",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
       "id": "35BQgZzmRfX6jx-4C0QCx",
       "type": "arrow",
-      "x": 189.158961499919,
+      "x": 199.6685111763037,
       "y": -689.7797906319505,
-      "width": 180.18676235459296,
-      "height": 140.6565427991144,
+      "width": 387.5745555504401,
+      "height": 203.84814930328855,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -353,11 +357,11 @@
         "type": 2
       },
       "seed": 211570186,
-      "version": 560,
-      "versionNonce": 1222096868,
+      "version": 847,
+      "versionNonce": 1501077557,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1780399631714,
+      "updated": 1781357911227,
       "link": null,
       "locked": false,
       "points": [
@@ -366,8 +370,8 @@
           0
         ],
         [
-          180.18676235459296,
-          140.6565427991144
+          387.5745555504401,
+          203.84814930328855
         ]
       ],
       "lastCommittedPoint": null,
@@ -388,10 +392,10 @@
     {
       "id": "g_EMZci3tcuSjzJ80IpBg",
       "type": "arrow",
-      "x": 1027.3764678221378,
-      "y": -696.0830362422616,
-      "width": 442.1048881635361,
-      "height": 172.46675352422392,
+      "x": 1045.4145123757846,
+      "y": -696.0830362422618,
+      "width": 247.27473307548507,
+      "height": 187.38942559482388,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -407,11 +411,11 @@
         "type": 2
       },
       "seed": 460059914,
-      "version": 345,
-      "versionNonce": 751997540,
+      "version": 632,
+      "versionNonce": 2042353397,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1780399631714,
+      "updated": 1781357911227,
       "link": null,
       "locked": false,
       "points": [
@@ -420,8 +424,8 @@
           0
         ],
         [
-          -442.1048881635361,
-          172.46675352422392
+          -247.27473307548507,
+          187.38942559482388
         ]
       ],
       "lastCommittedPoint": null,
@@ -442,10 +446,10 @@
     {
       "id": "EJn1c2WHe0fHYUG9C5lDT",
       "type": "arrow",
-      "x": 444.23339626423757,
+      "x": 467.60906059534193,
       "y": -700.8952959554912,
-      "width": 14.007549534671341,
-      "height": 149.4597335344314,
+      "width": 161.30825027710125,
+      "height": 196.74123806859706,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -461,11 +465,11 @@
         "type": 2
       },
       "seed": 1997525578,
-      "version": 459,
-      "versionNonce": 1128916068,
+      "version": 746,
+      "versionNonce": 304988885,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1780399631714,
+      "updated": 1781357911227,
       "link": null,
       "locked": false,
       "points": [
@@ -474,8 +478,8 @@
           0
         ],
         [
-          14.007549534671341,
-          149.4597335344314
+          161.30825027710125,
+          196.74123806859706
         ]
       ],
       "lastCommittedPoint": null,
@@ -496,10 +500,10 @@
     {
       "id": "_wpcC5dLAXA0YYd-H79jK",
       "type": "rectangle",
-      "x": 913.5886937462931,
-      "y": -589.4466505507978,
-      "width": 369.901602579113,
-      "height": 502.1745857359872,
+      "x": 866.6411915086869,
+      "y": -504.6903609561123,
+      "width": 673.9015415439567,
+      "height": 635,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -515,8 +519,8 @@
         "type": 3
       },
       "seed": 1961685398,
-      "version": 1020,
-      "versionNonce": 117289828,
+      "version": 1769,
+      "versionNonce": 1377995914,
       "isDeleted": false,
       "boundElements": [
         {
@@ -532,17 +536,17 @@
           "type": "arrow"
         }
       ],
-      "updated": 1780399577925,
+      "updated": 1782484103960,
       "link": null,
       "locked": false
     },
     {
       "id": "N92ikNa6yKV1BB1YrXzbX",
       "type": "text",
-      "x": 918.5886937462931,
-      "y": -584.4466505507978,
-      "width": 356.0597839355469,
-      "height": 400,
+      "x": 871.6411915086869,
+      "y": -499.6903609561123,
+      "width": 659.0196533203125,
+      "height": 625,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -556,30 +560,30 @@
       "index": "aIV",
       "roundness": null,
       "seed": 749635786,
-      "version": 1356,
-      "versionNonce": 523620828,
+      "version": 2583,
+      "versionNonce": 1655480906,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1780399630539,
+      "updated": 1782484117965,
       "link": null,
       "locked": false,
-      "text": "Схема отчета за день(добавлять\nможет оператор, менеджер; доступ\nесть у деректора, менеджера,\nбухгалтера):\nnumberAgzp: № заправки\n  date: дата  \n  operatorName: имя оператора \n  finalMeterReading: показание\nконечного счетчика\n  price: цена\n  cashRegisterTotal: итого по каасе\nв деньгах\n  f2Total: итого в деньгах\n  accordingToContract: [по\nдоговору {name: имя компании,\nliters: литры}]",
+      "text": "Схема отчета за день(добавлять может оператор, менеджер; доступ\nесть у деректора, менеджера, бухгалтера):\n - numberAgzp: № заправки,\n - date: дата,  \n - operatorName: имя оператора, \n - typeOfFuel(вид топлива)\n - fuelArrival: приход топлива,\n - noteForFuelArrival: примечание для прихода топлива,\n - initialCounterValue1: показания начального счетчика,\n - finalMeterReading1: показание конечного счетчика,\n - initialCounterValue2: показания начального счетчика,\n - finalMeterReading2: показание конечного счетчика,\n - fuelResidues: остатки топлива в % или литрах, массив ,\n - noteOnFuelRemaining: примечание к остатку топлива, \n - price: цена,\n - cashRegisterTotal: итого по каасе  в деньгах,\n - byTerminal: по терминалу,\n - litersByCashRegister: литры по кассе,\n - f2Total: итого в деньгах,\n - litersByF2: литры по Ф2,\n - accordingToContract: [по договору {name: имя компании, liters:\nлитры}],\n - fuelForTheOffice: топливо для нужд офиса,\n - noteForFuelForTheOffice: примечание к расходам топлива для\nофиса",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": "_wpcC5dLAXA0YYd-H79jK",
-      "originalText": "Схема отчета за день(добавлять может оператор, менеджер; доступ есть у деректора, менеджера, бухгалтера):\nnumberAgzp: № заправки\n  date: дата  \n  operatorName: имя оператора \n  finalMeterReading: показание конечного счетчика\n  price: цена\n  cashRegisterTotal: итого по каасе  в деньгах\n  f2Total: итого в деньгах\n  accordingToContract: [по договору {name: имя компании, liters: литры}]",
+      "originalText": "Схема отчета за день(добавлять может оператор, менеджер; доступ есть у деректора, менеджера, бухгалтера):\n - numberAgzp: № заправки,\n - date: дата,  \n - operatorName: имя оператора, \n - typeOfFuel(вид топлива)\n - fuelArrival: приход топлива,\n - noteForFuelArrival: примечание для прихода топлива,\n - initialCounterValue1: показания начального счетчика,\n - finalMeterReading1: показание конечного счетчика,\n - initialCounterValue2: показания начального счетчика,\n - finalMeterReading2: показание конечного счетчика,\n - fuelResidues: остатки топлива в % или литрах, массив ,\n - noteOnFuelRemaining: примечание к остатку топлива, \n - price: цена,\n - cashRegisterTotal: итого по каасе  в деньгах,\n - byTerminal: по терминалу,\n - litersByCashRegister: литры по кассе,\n - f2Total: итого в деньгах,\n - litersByF2: литры по Ф2,\n - accordingToContract: [по договору {name: имя компании, liters: литры}],\n - fuelForTheOffice: топливо для нужд офиса,\n - noteForFuelForTheOffice: примечание к расходам топлива для офиса",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
       "id": "Cebl6jg7XyuBy36PslsLQ",
       "type": "arrow",
-      "x": 1049.040516246987,
-      "y": -696.0747879785251,
-      "width": 11.969349579451091,
-      "height": 105.51147300879916,
+      "x": 1055.2176296555588,
+      "y": -696.0747879785253,
+      "width": 50.452575703683806,
+      "height": 190.45283633642612,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -595,11 +599,11 @@
         "type": 2
       },
       "seed": 1709083926,
-      "version": 1048,
-      "versionNonce": 1252731492,
+      "version": 1791,
+      "versionNonce": 570723018,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1780399577925,
+      "updated": 1782484101171,
       "link": null,
       "locked": false,
       "points": [
@@ -608,8 +612,8 @@
           0
         ],
         [
-          11.969349579451091,
-          105.51147300879916
+          50.452575703683806,
+          190.45283633642612
         ]
       ],
       "lastCommittedPoint": null,
@@ -630,10 +634,10 @@
     {
       "id": "ZP0MtKKC0pr8CAv1vr6wy",
       "type": "rectangle",
-      "x": 291.3243461252057,
-      "y": -316.1148125182416,
+      "x": 3.6042496191789724,
+      "y": -483.86950192249805,
       "width": 524.8889600965712,
-      "height": 510,
+      "height": 920,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -649,8 +653,8 @@
         "type": 3
       },
       "seed": 2083161308,
-      "version": 612,
-      "versionNonce": 2080716004,
+      "version": 1010,
+      "versionNonce": 1895658698,
       "isDeleted": false,
       "boundElements": [
         {
@@ -658,21 +662,29 @@
           "id": "IOAykCMQDmvNlXgdA5gf1"
         },
         {
-          "id": "AxQ2rmBVcKZkBKjMmnkCr",
+          "id": "CzxQMDO_9Bi7viJSvYetP",
+          "type": "arrow"
+        },
+        {
+          "id": "fw92JA7Z1HVI2hMGtgoEB",
+          "type": "arrow"
+        },
+        {
+          "id": "c8ZmtgEggj5Z0Ii8ww4zL",
           "type": "arrow"
         }
       ],
-      "updated": 1780407712749,
+      "updated": 1782484047780,
       "link": null,
       "locked": false
     },
     {
       "id": "IOAykCMQDmvNlXgdA5gf1",
       "type": "text",
-      "x": 296.3243461252057,
-      "y": -311.1148125182416,
-      "width": 478.25970458984375,
-      "height": 450,
+      "x": 8.604249619178972,
+      "y": -478.86950192249805,
+      "width": 509.15966796875,
+      "height": 875,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -686,20 +698,20 @@
       "index": "aL8",
       "roundness": null,
       "seed": 1531828708,
-      "version": 595,
-      "versionNonce": 1591015524,
+      "version": 1600,
+      "versionNonce": 1875397514,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1780407712749,
+      "boundElements": [],
+      "updated": 1782484047780,
       "link": null,
       "locked": false,
-      "text": "Список заправок(добавлять может директор,\nменеджер, бухгалтер):\ngasStationNumber(номер заправки):'agzp_3',\naddress(адрес):\"\"\nlistOfEmployees(список сотрудников):[]\nfuelTanks(емкости для топлива):[]\ndispenserName(название колонки):\"\"\ncommissioningDate(дата ввода в эксплуатацию):\"\"\nlastMaintenance(последнее ТО):\"\"\n\nСписок сотрудников (добавлять может директор,\nменеджер):\nname: имя\npassword: пароль\njobTitle:должность\nplaceOfWork: место работы\n\n",
+      "text": "Список заправок(добавлять может директор,\nменеджер, бухгалтер):\n - gasStationNumber(номер заправки):'agzp_3',\n - typeOfFuel(вид топлива): массив\n - address(адрес):\"\"\n - phoneNumber(номер телефона):''\n - listOfEmployees(список сотрудников):[]\n - fuelTanks(емкости для топлива):[]\n - dispenserName(название колонки):\"\"\n - commissioningDate(дата ввода в эксплуатацию):\"\"\n - lastMaintenance(последнее ТО):\"\"\n\nСписок сотрудников (добавлять может директор,\nменеджер):\n - name: имя\n - password: пароль\n - jobTitle:должность\n - placeOfWork: место работы\n\nСписок контрагентов(добавлять может директор,\nменеджер, бухгалтер):\n - name (название компании):\"Кагма\",\n - codeEDRPOU(едрпоу):12345678,\n - individualTaxNumber(ИНН): 123456789012\n - typeOfLegalEntity(тип юридического лица: фоп,\nООО, АО):\"ЗАО\"\n - phoneNumber(номер телефона):+380501234567\n - email:\"kagma@gmail.com\"\n - discount(скидка):0,50 грн.\n - contractNumber(номер договора):\"03/09-2021\"\n - durationOfTheContract(срок действия договора):\n31.12.2027\n\n\n",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": "ZP0MtKKC0pr8CAv1vr6wy",
-      "originalText": "Список заправок(добавлять может директор, менеджер, бухгалтер):\ngasStationNumber(номер заправки):'agzp_3',\naddress(адрес):\"\"\nlistOfEmployees(список сотрудников):[]\nfuelTanks(емкости для топлива):[]\ndispenserName(название колонки):\"\"\ncommissioningDate(дата ввода в эксплуатацию):\"\"\nlastMaintenance(последнее ТО):\"\"\n\nСписок сотрудников (добавлять может директор, менеджер):\nname: имя\npassword: пароль\njobTitle:должность\nplaceOfWork: место работы\n\n",
+      "originalText": "Список заправок(добавлять может директор, менеджер, бухгалтер):\n - gasStationNumber(номер заправки):'agzp_3',\n - typeOfFuel(вид топлива): массив\n - address(адрес):\"\"\n - phoneNumber(номер телефона):''\n - listOfEmployees(список сотрудников):[]\n - fuelTanks(емкости для топлива):[]\n - dispenserName(название колонки):\"\"\n - commissioningDate(дата ввода в эксплуатацию):\"\"\n - lastMaintenance(последнее ТО):\"\"\n\nСписок сотрудников (добавлять может директор, менеджер):\n - name: имя\n - password: пароль\n - jobTitle:должность\n - placeOfWork: место работы\n\nСписок контрагентов(добавлять может директор, менеджер, бухгалтер):\n - name (название компании):\"Кагма\",\n - codeEDRPOU(едрпоу):12345678,\n - individualTaxNumber(ИНН): 123456789012\n - typeOfLegalEntity(тип юридического лица: фоп, ООО, АО):\"ЗАО\"\n - phoneNumber(номер телефона):+380501234567\n - email:\"kagma@gmail.com\"\n - discount(скидка):0,50 грн.\n - contractNumber(номер договора):\"03/09-2021\"\n - durationOfTheContract(срок действия договора): 31.12.2027\n\n\n",
       "autoResize": true,
       "lineHeight": 1.25
     },
@@ -725,8 +737,8 @@
         "type": 3
       },
       "seed": 1396891356,
-      "version": 641,
-      "versionNonce": 853216740,
+      "version": 642,
+      "versionNonce": 661137775,
       "isDeleted": false,
       "boundElements": [
         {
@@ -736,9 +748,13 @@
         {
           "id": "6VxWHLX9mYi2skGptVP0f",
           "type": "arrow"
+        },
+        {
+          "id": "c8ZmtgEggj5Z0Ii8ww4zL",
+          "type": "arrow"
         }
       ],
-      "updated": 1780399456235,
+      "updated": 1780908778193,
       "link": null,
       "locked": false
     },
@@ -782,10 +798,10 @@
     {
       "id": "6VxWHLX9mYi2skGptVP0f",
       "type": "arrow",
-      "x": 705.6166287111106,
+      "x": 728.7158302905013,
       "y": -699.9157127070077,
-      "width": 144.7190139885313,
-      "height": 147.63356663378818,
+      "width": 15.983844624998369,
+      "height": 194.13282643859702,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -801,11 +817,11 @@
         "type": 2
       },
       "seed": 1639928292,
-      "version": 287,
-      "versionNonce": 341777252,
+      "version": 574,
+      "versionNonce": 574673301,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1780399631714,
+      "boundElements": [],
+      "updated": 1781357911227,
       "link": null,
       "locked": false,
       "points": [
@@ -814,8 +830,8 @@
           0
         ],
         [
-          -144.7190139885313,
-          147.63356663378818
+          -15.983844624998369,
+          194.13282643859702
         ]
       ],
       "lastCommittedPoint": null,
@@ -836,10 +852,10 @@
     {
       "id": "dHyasfP8avSnXyq4Uh9Fm",
       "type": "arrow",
-      "x": 491.9261372519087,
-      "y": -701.0678006425896,
-      "width": 419.9172585961164,
-      "height": 149.33361737416658,
+      "x": 483.5457473380345,
+      "y": -701.0678006425895,
+      "width": 473.4478205972364,
+      "height": 194.40685871793158,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -855,11 +871,11 @@
         "type": 2
       },
       "seed": 1886883932,
-      "version": 386,
-      "versionNonce": 538983908,
+      "version": 1129,
+      "versionNonce": 1534894474,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1780399577925,
+      "boundElements": [],
+      "updated": 1782484101171,
       "link": null,
       "locked": false,
       "points": [
@@ -868,8 +884,8 @@
           0
         ],
         [
-          419.9172585961164,
-          149.33361737416658
+          473.4478205972364,
+          194.40685871793158
         ]
       ],
       "lastCommittedPoint": null,
@@ -888,12 +904,12 @@
       "elbowed": false
     },
     {
-      "id": "AxQ2rmBVcKZkBKjMmnkCr",
+      "id": "CzxQMDO_9Bi7viJSvYetP",
       "type": "arrow",
-      "x": 481.99641379811146,
-      "y": -364.3553384903695,
-      "width": 8.037723470001424,
-      "height": 45.09617699599056,
+      "x": 238.59821419662694,
+      "y": -689.7151456899669,
+      "width": 63.67193735769922,
+      "height": 202.97333530438516,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -904,16 +920,16 @@
       "opacity": 100,
       "groupIds": [],
       "frameId": null,
-      "index": "aa",
+      "index": "ab",
       "roundness": {
         "type": 2
       },
-      "seed": 980763996,
-      "version": 227,
-      "versionNonce": 1776307172,
+      "seed": 831880097,
+      "version": 309,
+      "versionNonce": 1686784586,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1780407712749,
+      "boundElements": [],
+      "updated": 1782484047781,
       "link": null,
       "locked": false,
       "points": [
@@ -922,20 +938,128 @@
           0
         ],
         [
-          8.037723470001424,
-          45.09617699599056
+          -63.67193735769922,
+          202.97333530438516
         ]
       ],
       "lastCommittedPoint": null,
       "startBinding": {
-        "elementId": "3rkyLAeQv1vVgDGBcN_9g",
-        "focus": 0.002536087169632559,
-        "gap": 2.913420822924877
+        "elementId": "PQTiD3E7YiC_HCjal1mP3",
+        "focus": -0.4342283979462654,
+        "gap": 1.451915754779634
       },
       "endBinding": {
         "elementId": "ZP0MtKKC0pr8CAv1vr6wy",
-        "focus": -0.05396633815410563,
-        "gap": 4.511013333759934
+        "focus": -0.5808142127033771,
+        "gap": 3.311284574799629
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "fw92JA7Z1HVI2hMGtgoEB",
+      "type": "arrow",
+      "x": 459.7317229315656,
+      "y": -701.5164525553319,
+      "width": 153.01645116621228,
+      "height": 216.32447485848002,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ac",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 312498113,
+      "version": 309,
+      "versionNonce": 1444835594,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1782484047781,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -153.01645116621228,
+          216.32447485848002
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "lI7Nx-EQXyWDQAAWFpy42",
+        "focus": -0.2987990016213412,
+        "gap": 1
+      },
+      "endBinding": {
+        "elementId": "ZP0MtKKC0pr8CAv1vr6wy",
+        "focus": -0.48579674373617215,
+        "gap": 1.523504634434289
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "c8ZmtgEggj5Z0Ii8ww4zL",
+      "type": "arrow",
+      "x": 733.3086414209963,
+      "y": -699.340485303062,
+      "width": 365.5028256968624,
+      "height": 214.14850760621022,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ad",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1387509729,
+      "version": 365,
+      "versionNonce": 939507658,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1782484047781,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -365.5028256968624,
+          214.14850760621022
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "cVYUvIFpF7GmHMHmpc-ZY",
+        "focus": -0.42858387529628705,
+        "gap": 3.204035226282599
+      },
+      "endBinding": {
+        "elementId": "ZP0MtKKC0pr8CAv1vr6wy",
+        "focus": -0.654433168345256,
+        "gap": 1.523504634434289
       },
       "startArrowhead": null,
       "endArrowhead": "arrow",

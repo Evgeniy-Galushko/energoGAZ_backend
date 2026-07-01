@@ -7,6 +7,8 @@ export const swaggerDocs = () => {
   try {
     const swaggerDocs = JSON.parse(fs.readFileSync(SWAGGER_PATH).toString());
     // console.log(swaggerDocs);
+    console.log(...swaggerUI.serve, swaggerUI.setup(swaggerDocs));
+
     return [...swaggerUI.serve, swaggerUI.setup(swaggerDocs)];
   } catch (err) {
     console.log(err);

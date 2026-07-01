@@ -1,0 +1,45 @@
+tags:
+  - Operational Work
+summary: Deleting a company by ID
+operationId: deleteCompanie
+description: Deleting a company by ID
+security:
+  - bearerAuth: []
+parameters:
+  - in: path
+    name: companieId
+    required: true
+    schema:
+      type: string
+      example: 6a42592e1332b645bbbf0568
+responses:
+  '204':
+    description: 'The company has been deleted.'
+  '401':
+    $ref: ../../../components/responses/401.yaml
+  '403':
+    $ref: ../../../components/responses/403.yaml
+  '404':
+    description: NotFoundError
+    content:
+      application/json:
+        schema:
+          required:
+            - status
+            - message
+            - data
+          properties:
+            status:
+              type: integer
+              example: 404
+            message:
+              type: string
+              example: NotFoundError
+            data:
+              type: object
+              required:
+                - message
+              properties:
+                message:
+                  type: string
+                  example: 'No such company was found.'

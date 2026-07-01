@@ -25,7 +25,7 @@ export const serverSetap = () => {
   app.use(pino({ transport: { target: 'pino-pretty' } }));
 
   app.use('/api', allRoutes);
-  app.use('/api-docs', swaggerDocs);
+  app.use('/api-docs', swaggerDocs());
 
   app.use('*splat', notFoundHandler);
 

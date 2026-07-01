@@ -1,0 +1,45 @@
+tags:
+  - Operational Work
+summary: Delete by employeeId
+operationId: deleteEmployeesId
+description: Delete by employeeId
+security:
+  - bearerAuth: []
+parameters:
+  - in: path
+    name: employeeId
+    required: true
+    schema:
+      type: string
+      example: 6a1ea6adf73050b494da3ccd
+responses:
+  '204':
+    description: 'The employee has been removed'
+  '401':
+    $ref: ../../../components/responses/401.yaml
+  '403':
+    $ref: ../../../components/responses/403.yaml
+  '404':
+    description: NotFoundError
+    content:
+      application/json:
+        schema:
+          required:
+            - status
+            - message
+            - data
+          properties:
+            status:
+              type: integer
+              example: 404
+            message:
+              type: string
+              example: NotFoundError
+            data:
+              type: object
+              required:
+                - message
+              properties:
+                message:
+                  type: string
+                  example: 'Employees not found'

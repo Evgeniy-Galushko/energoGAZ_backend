@@ -1,0 +1,184 @@
+description: Shift report from the gas station
+content:
+  application/json:
+    schema:
+      required:
+        - status
+        - message
+        - data
+      properties:
+        status:
+          type: integer
+          example: 201
+        message:
+          type: string
+          example: Daily report created
+        data:
+          type: object
+          required:
+            - numberAgzp
+            - date
+            - operatorName
+            - typeOfFuel
+            - fuelArrival
+            - noteForFuelArrival
+            - initialCounterValue1
+            - finalMeterReading1
+            - initialCounterValue2
+            - finalMeterReading2
+            - fuelResidues
+            - noteOnFuelRemaining
+            - price
+            - cashRegisterTotal
+            - byTerminal
+            - litersByCashRegister
+            - f2Total
+            - litersByF2
+            - accordingToContract
+            - fuelForTheOffice
+            - noteForFuelForTheOffice
+            - userUpdatedId
+            - userUpdatedName
+            - _id
+          properties:
+            numberAgzp:
+              description: 'gas station number'
+              type: string
+              example: 'agzp_1'
+            date:
+              description: 'What period is the report for'
+              type: string
+              example: '2026-02-25'
+            operatorName:
+              description: 'Operators name'
+              type: string
+              example: 'Иванов И.И.'
+            typeOfFuel:
+              description: 'type of fuel'
+              type: string
+              enum: ['gas', 'gasoline_A_95', 'gasoline_A_92', 'diesel']
+            fuelArrival:
+              description: 'arrival of fuel at the gas station'
+              type: array
+              items:
+                type: object
+                properties:
+                  containerNumber:
+                    type: number
+                    description: Tank number
+                  volume:
+                    type: number
+                    description: Drained fuel
+                required:
+                  - containerNumber
+                  - volume
+              example:
+                - containerNumber: 1
+                  volume: 10000
+                - containerNumber: 2
+                  volume: 0
+            noteForFuelArrival:
+              description: 'Note for fuel arrival'
+              type: string
+              example: 'в 1 емкость слито 5000 л., во 2 емкость слито 4000 л.'
+            initialCounterValue1:
+              description: 'Initial counter value 1'
+              type: number
+              example: 2567874.23
+            finalMeterReading1:
+              description: 'Final meter reading 1'
+              type: number
+              example: 2569874.23
+            initialCounterValue2:
+              description: 'Initial counter value 2'
+              type: number
+              example: 0
+            finalMeterReading2:
+              description: 'Final meter reading 2'
+              type: number
+              example: 0
+            fuelResidues:
+              description: 'Remaining fuel at the gas station'
+              type: array
+              items:
+                type: object
+                properties:
+                  containerNumber:
+                    type: number
+                    description: Tank number
+                  remainder:
+                    type: number
+                    description: Remaining fuel
+                required:
+                  - containerNumber
+                  - remainder
+              example:
+                - containerNumber: 1
+                  remainder: 85
+                - containerNumber: 2
+                  remainder: 65
+            noteOnFuelRemaining:
+              description: 'Note on fuel remaining'
+              type: string
+              example: ''
+            price:
+              description: 'Price of fuel at the gas stationl'
+              type: number
+              example: 28.50
+            cashRegisterTotal:
+              description: 'Cash register amount per shift'
+              type: number
+              example: 3654.5
+            byTerminal:
+              description: 'Amount per terminal per shift'
+              type: number
+              example: 2521.25
+            litersByCashRegister:
+              description: 'Liters by cash register and terminal'
+              type: number
+              example: 256.50
+            f2Total:
+              description: 'Sum over f2'
+              type: number
+              example: 12035.25
+            litersByF2:
+              description: 'Liters by f2'
+              type: number
+              example: 505.50
+            accordingToContract:
+              description: 'Refueling under contract'
+              type: array
+              items:
+                type: object
+                properties:
+                  nameCompani:
+                    type: string
+                    description: Company name
+                  liters:
+                    type: number
+                    description: Liters filled
+              example:
+                - nameCompani: 'МХП'
+                  liters: 250
+                - nameCompani: 'Коло'
+                  liters: 50
+            fuelForTheOffice:
+              description: 'Fuel for office needs'
+              type: number
+              example: 50
+            noteForFuelForTheOffice:
+              description: 'Office fuel note'
+              type: string
+              example: '30 - управляющий АГЗП, 20 - главный инженер'
+            userUpdatedId:
+              description: 'Company employee ID'
+              type: string
+              example: '6a22c356b0a3c31e140331a0'
+            userUpdatedName:
+              description: 'Name of the company employee'
+              type: string
+              example: ''
+            _id:
+              description: 'Report ID'
+              type: string
+              example: '6a4126cae0ce5dae5d7c5718'

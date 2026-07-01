@@ -1,0 +1,95 @@
+tags:
+  - Operational Work
+summary: List of all counterparties
+operationId: getAllCompanies
+description: List of all counterparties
+security:
+  - bearerAuth: []
+responses:
+  '200':
+    description: 'All counterparties'
+    content:
+      aplication/json:
+        schema:
+          type: object
+          required:
+            - status
+            - message
+            - data
+          properties:
+            status:
+              type: integer
+              example: 200
+            message:
+              type: string
+              example: 'All companies'
+            data:
+              type: array
+              items:
+                type: object
+                required:
+                  - name
+                  - codeEDRPOU
+                  - individualTaxNumber
+                  - typeOfLegalEntity
+                  - phoneNumber
+                  - email
+                  - discount
+                  - contractNumber
+                  - durationOfTheContract
+                  - userId
+                  - userName
+                  - _id
+                properties:
+                  name:
+                    description: 'Company name'
+                    type: string
+                    example: 'Баранково'
+                  codeEDRPOU:
+                    description: 'Legal entity registration number'
+                    type: number
+                    example: 12345678
+                  individualTaxNumber:
+                    description: 'Individual tax number'
+                    type: number
+                    example: 123456789012
+                  typeOfLegalEntity:
+                    description: 'Type of legal entity'
+                    type: string
+                    example: 'ПАО'
+                  phoneNumber:
+                    description: 'Contact phone number'
+                    type: string
+                    example: '+380501234567'
+                  email:
+                    description: 'Email address'
+                    type: string
+                    example: 'barankovo@gmail.com'
+                  discount:
+                    description: 'Fuel discount'
+                    type: number
+                    example: 0.50
+                  contractNumber:
+                    description: 'Contract number'
+                    type: string
+                    example: '01/01-2024'
+                  durationOfTheContract:
+                    description: 'Duration of the contract'
+                    type: string
+                    example: '31.12.2027'
+                  userId:
+                    description: 'Company employee ID'
+                    type: string
+                    example: '6a22c356b0a3c31e140331a0'
+                  userName:
+                    description: 'Name of the company employee'
+                    type: string
+                    example: 'Иванов'
+                  _id:
+                    description: 'Company identifier in the database'
+                    type: string
+                    example: '6a4126cae0ce5dae5d7c5718'
+  '401':
+    $ref: ../../components/responses/401.yaml
+  '403':
+    $ref: ../../components/responses/403.yaml

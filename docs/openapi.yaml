@@ -17,6 +17,60 @@ paths:
   /api/auth/registeUser:
     post:
       $ref: ../docs/swagger/paths/auth/postRegister.yaml
+  /api/auth/loginUser:
+    post:
+      $ref: ../docs/swagger/paths/auth/postLogin.yaml
+  /api/auth/logout:
+    post:
+      $ref: ../docs/swagger/paths/auth/postLogOut.yaml
+  /api/work/allEmployees:
+    get:
+      $ref: ../docs/swagger/paths/operationalWork/getAllEmployees.yaml
+  /api/work/oneEmployees/{employeeId}:
+    get:
+      $ref: ../docs/swagger/paths/operationalWork/{id}/getEmployeeId.yaml
+  /api/work/deleteEmployees/{employeeId}:
+    delete:
+      $ref: ../docs/swagger/paths/operationalWork/{id}/deleteEmployeeId.yaml
+  /api/work/addingAgzp:
+    post:
+      $ref: ../docs/swagger/paths/operationalWork/postAddingAgzp.yaml
+  /api/work/allAgzp:
+    get:
+      $ref: ../docs/swagger/paths/operationalWork/getAllAgzp.yaml
+  /api/work/updateAgzp/{agzpId}:
+    patch:
+      $ref: ../docs/swagger/paths/operationalWork/{id}/patchUpdatedAgzp.yaml
+  /api/work/deleteAgzp/{agzpId}:
+    delete:
+      $ref: ../docs/swagger/paths/operationalWork/{id}/deleteAgzpId.yaml
+  /api/work/dailyReportAgzp:
+    post:
+      $ref: ../docs/swagger/paths/operationalWork/postDailyReportAgzp.yaml
+  /api/work/updateDailyReportAgzp/{dailyReportId}:
+    patch:
+      $ref: ../docs/swagger/paths/operationalWork/{id}/updateDailyReport.yaml
+  /api/work/dailyReportForOneMonth:
+    get:
+      $ref: ../docs/swagger/paths/operationalWork/getDailyReportAgzpOneMonth.yaml
+  /api/work/dailyReportForOneYear:
+    get:
+      $ref: ../docs/swagger/paths/operationalWork/getDailyReportAgzpOneYear.yaml
+  /api/work/dailyReportForAllTime:
+    get:
+      $ref: ../docs/swagger/paths/operationalWork/getDailyReportAgzpForAllTime.yaml
+  /api/work/addingCompanies:
+    post:
+      $ref: ../docs/swagger/paths/operationalWork/postAddingCompanies.yaml
+  /api/work/allCompanies:
+    get:
+      $ref: ../docs/swagger/paths/operationalWork/getAllCompanies.yaml
+  /api/work/updateCompanie/{companieId}:
+    patch:
+      $ref: ../docs/swagger/paths/operationalWork/{id}/updateCompanie.yaml
+  /api/work/deleteCompanie/{companieId}:
+    delete:
+      $ref: ../docs/swagger/paths/operationalWork/{id}/deleteCompanie.yaml
 components:
   securitySchemes:
     bearerAuth:
