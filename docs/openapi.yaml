@@ -13,6 +13,7 @@ tags:
     description: Accounting of the activities of the EnergoGAZ company
 servers:
   - url: http://localhost:3000
+  - url: https://energogaz-backend.onrender.com
 paths:
   /api/auth/registeUser:
     post:
