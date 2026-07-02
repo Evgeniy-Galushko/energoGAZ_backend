@@ -26,6 +26,17 @@ requestBody:
             description: 'user place of work'
             type: string
             example: 'agzp_1'
+            enum:
+              [
+                'офис',
+                'agzp_1',
+                'agzp_2',
+                'agzp_3',
+                'agzp_4',
+                'agzp_5',
+                'agzp_6',
+                'agzp_7',
+              ]
 responses:
   '200':
     description: 'The user is authorized'

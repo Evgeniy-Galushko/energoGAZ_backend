@@ -125,7 +125,7 @@ router.post(
   validateBody(validationAddingCompanies),
   ctrWrapper(addingCompaniesController),
 );
-router.get('/allCompanies', accessCheck, ctrWrapper(allCompaniesController));
+router.get('/allCompanies', ctrWrapper(allCompaniesController));
 
 router.patch(
   '/updateCompanie/:companieId',
