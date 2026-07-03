@@ -20,7 +20,7 @@ export const serverSetap = () => {
   app.use(
     express.json({ type: ['application/json', 'application/vnd.api+json'] }),
   );
-  app.use(cors(corsOptions));
+  // app.use(cors(corsOptions));
 
   app.use(pino({ transport: { target: 'pino-pretty' } }));
 
