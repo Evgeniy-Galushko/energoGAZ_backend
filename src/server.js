@@ -10,8 +10,8 @@ import { swaggerDocs } from './middlewares/swaggerDocs.js';
 const PORT = Number(getEnvVar('PORT'));
 
 const corsOptions = {
-  origin: 'http://localhost:5173',
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  // origin: 'http://localhost:5173',
+  // optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
 export const serverSetap = () => {
