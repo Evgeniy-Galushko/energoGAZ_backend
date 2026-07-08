@@ -2781,13 +2781,13 @@
                   },
                   "codeEDRPOU": {
                     "description": "Legal entity registration number",
-                    "type": "number",
-                    "example": 12345678
+                    "type": "string",
+                    "example": "12345678"
                   },
                   "individualTaxNumber": {
                     "description": "Individual tax number",
-                    "type": "number",
-                    "example": 123456789012
+                    "type": "string",
+                    "example": "123456789012"
                   },
                   "typeOfLegalEntity": {
                     "description": "Type of legal entity",

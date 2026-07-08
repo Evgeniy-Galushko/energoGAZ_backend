@@ -3,8 +3,8 @@ import { model, Schema } from 'mongoose';
 const addingCompaniesSchema = new Schema(
   {
     name: { type: String, required: true },
-    codeEDRPOU: { type: Number, required: true },
-    individualTaxNumber: { type: Number, required: true },
+    codeEDRPOU: { type: String, required: true },
+    individualTaxNumber: { type: String, required: true },
     typeOfLegalEntity: { type: String, required: true },
     phoneNumber: { type: String, required: true },
     email: { type: String, required: true },
